@@ -143,13 +143,6 @@ class Character:
         else:
             return None
     
-    def set_active_pokemann(self, swap_pos):
-        """
-        Moves pokemann to first position [0] in the pokemann list by exchanging it with
-        pokemann located at swap_pos.
-        """
-        pass
-    
     def draw(self):
         pass
 
