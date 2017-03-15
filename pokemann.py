@@ -108,15 +108,15 @@ class Move:
 
     def restore(self):
         """
-        Resets remaing_power to starting powerpoint.
+        Resets remaining_power to starting powerpoint.
         """
         
 
 class Character:
     
-    def __init__(self, name, pokemann, image):
+    def __init__(self, name, party, image):
         self.name = name
-        self.pokemann = pokemann
+        self.party = party
         self.image = image
 
     def get_available_pokemann(self):
@@ -125,7 +125,7 @@ class Character:
         """
         result = []
                   
-        for p in self.pokemann:
+        for p in self.party:
             if p.fainted == False:
                   result.append(p)
                     
@@ -152,7 +152,7 @@ class Player(Character):
     def __init__(self, name, pokemann, image):
         Character.__init__(self, name, pokemann, image)
         
-        self.collection = []
+        self.computer = []
         self.pokeballs = 0
 
     def catch(self, target):
