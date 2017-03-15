@@ -143,6 +143,9 @@ class Character:
         else:
             return None
     
+    def restore(self):
+        pass
+    
     def draw(self):
         pass
 
