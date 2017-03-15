@@ -139,7 +139,7 @@ class Character:
         available = self.get_available_pokemann()
 
         if len(available) > 0:
-            return pokemann[0]
+            return self.pokemann[0]
         else:
             return None
     
