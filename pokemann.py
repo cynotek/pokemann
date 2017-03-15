@@ -63,7 +63,7 @@ class Pokemann:
 
     def restore(self):
         """
-        Restores all health and resets powerpoint for all moves.
+        Restores all health, unfaints, and resets powerpoint for all moves.
         """
         pass
     
